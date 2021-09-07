@@ -37,6 +37,13 @@ print("twelve digit prime number: ",sum(t1)/len(t1))
 t1 = timeit.repeat(lambda: fle.isPrime(1000000000100011), number=1, repeat=5)
 print("Sixteen digit prime number: ",sum(t1)/len(t1))
 
+#Twenty Seven digit prime number
+t1 = timeit.repeat(lambda: fle.isPrime(618970019642690137449562111), number=1, repeat=1)
+print("27 digit prime number: ",sum(t1)/len(t1))
+
+#157 digit prime number
+t1 = timeit.repeat(lambda: fle.isPrime(6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151), number=1, repeat=1)
+print("157 digit prime number: ",sum(t1)/len(t1))
 '''
 N'th prime number for different n values
 '''
